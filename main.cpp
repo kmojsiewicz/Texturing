@@ -119,7 +119,7 @@ void drawTriangle(TVertex V1, TVertex V2, TVertex V3, Texture *texture, QPainter
                 z += dZdX;
                 u += dUdX;
                 v += dVdX;
-                putPixel(x, y, texture->data[(int)u + (int)v*256], painter);
+                putPixel(x, y, texture->data[(int)u + (int)v*(texture->width)], painter);
             }
         }
         else {
@@ -128,7 +128,7 @@ void drawTriangle(TVertex V1, TVertex V2, TVertex V3, Texture *texture, QPainter
                 z += dZdX;
                 u += dUdX;
                 v += dVdX;
-                putPixel(x, y, texture->data[(int)u + (int)v*256], painter);
+                putPixel(x, y, texture->data[(int)u + (int)v*(texture->width)], painter);
             }
         }
     y += 1.0;
@@ -158,7 +158,7 @@ void drawTriangle(TVertex V1, TVertex V2, TVertex V3, Texture *texture, QPainter
             z += dZdX;
             u += dUdX;
             v += dVdX;
-            putPixel(x, y, texture->data[(int)u + (int)v*256], painter);
+            putPixel(x, y, texture->data[(int)u + (int)v*(texture->width)], painter);
         }
         y += 1.0;
     }
