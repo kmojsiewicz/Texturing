@@ -16,6 +16,7 @@ public:
 
     void draw(QPainter *painter);
     int loadFromBitmap(const char *fileName);
+    QRgb getColor(int x, int y);
 };
 
 #endif // TEXTURE_H

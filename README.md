@@ -6,7 +6,9 @@ Software texturing of primitives
 
 ## Description
 
-The texture is downloaded from the bitmap file
+Textures are loaded from bitmap files. 
+Matrix operations were used to rotate and display the cube: rotation around the Z axis,
+rotation around the X axis, translation and projection
 
 ## Getting Started
 
@@ -25,7 +27,7 @@ Krzysztof Mojsiewicz
 
 ## Version History
 
-* 1.0.0.0
+* 1.0.0.2
     * Initial Release
 
 ## License
